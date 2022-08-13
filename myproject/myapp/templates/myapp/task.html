@@ -1,0 +1,15 @@
+{% extends 'myapp/main.html'%}
+
+{% block body %}
+
+<a href="{% url 'myapps:add' %}">New Task</a>
+
+<ul>
+    {% for task in tasks %}
+    <li>{{task}}</li>
+    {% endfor %}
+</ul>
+
+
+
+{% endblock %}
